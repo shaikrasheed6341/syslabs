@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Practice</title>
+</head>
+
+<body>
+
+    <h1>WebRTC Video Call</h1>
+
+    <input id="username" placeholder="username">
+    <input id="roomcode" placeholder="room code">
+
+    <br><br>
+
+    <button id="connect">Connect WebSocket</button>
+    <button id="join">Join Room</button>
+
+    <button id="cambtn">Open Camera</button>
+    <button id="offer">Create Offer</button>
+
+    <p id="status">offline</p>
+
+    <h2>My Camera</h2>
+    <video
+        id="cam"
+        autoplay
+        playsinline
+        muted
+        width="400">
+    </video>
+
+    <h2>Remote Camera</h2>
+    <video
+        id="remoteCam"
+        autoplay
+        playsinline
+        width="400">
+    </video>
+
+    <h2>Messages</h2>
+    <div id="meet"></div>
+
+    <h2>SDP</h2>
+    <pre id="sdp"></pre>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
